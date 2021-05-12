@@ -1,0 +1,14 @@
+  
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+DROP TABLE IF EXISTS `Joueurs`;
+CREATE TABLE  if not exists `Joueurs`(
+ `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Pseudo` varchar(255) DEFAULT NULL,
+  `score` int(2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`),
+)ENGINE=MyISAM DEFAULT CHARSET=latin1; 
